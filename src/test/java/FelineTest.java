@@ -13,9 +13,9 @@ public class FelineTest {
     private Feline feline;
 
     @Test
-    public void getKittensAnyTest() {
-        feline.getKittens(2);
-        Mockito.verify(feline).getKittens(Mockito.anyInt());
+    public void getKittensTest() {
+        feline.getKittens(3);
+        Mockito.verify(feline).getKittens(Mockito.anyInt());// убедились, что метод вызван нужное  количество раз
     }
 
     @Test

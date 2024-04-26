@@ -3,13 +3,13 @@ import com.example.Feline;
 import com.example.Names;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Spy;
+import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-    @Spy
+    @Mock
     Feline feline = new Feline();
     Cat cat = new Cat(feline);
     @Test

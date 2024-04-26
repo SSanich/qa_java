@@ -12,10 +12,9 @@ public class LionParamTest {
     public boolean hasEggs;
     public Feline feline;
 
-    public LionParamTest(String sex, Feline feline, boolean hasEggs) throws Exception {
+    public LionParamTest(String sex, boolean hasEggs) {
         this.sex = sex;
         this.hasEggs = hasEggs;
-        this.feline = feline;
     }
 
     Lion lion;
@@ -23,8 +22,8 @@ public class LionParamTest {
     @Parameterized.Parameters
     public static Object[][] getData() {
         return new Object[][]{
-                {"Самец",new Feline(), true},
-                {"Самка", new Feline(), false},
+                {"Самец", true},
+                {"Самка", false},
         };
 
     }
