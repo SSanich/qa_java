@@ -2,14 +2,10 @@ import com.example.Feline;
 import com.example.Lion;
 import com.example.Names;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
-import static org.junit.Assert.assertEquals;
 
-@RunWith(MockitoJUnitRunner.class)
+import static org.junit.Assert.assertEquals;
 public class LionTest {
-    @Mock
+
     Feline feline = new Feline();
     Lion lion = new Lion("Самец", feline);
 

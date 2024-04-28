@@ -13,13 +13,12 @@ public class FelineTest {
     private Feline feline;
 
     @Test
-    public void getKittensTest() {
-        feline.getKittens(3);
-        Mockito.verify(feline).getKittens(Mockito.anyInt());// убедились, что метод вызван нужное  количество раз
+    public void getKittensWithParamTest() {
+        assertEquals(3,feline.getKittens(3));
     }
 
     @Test
-    public void getKittens1Test() {
+    public void getKittensTest() {
         assertEquals(1, feline.getKittens());
     }
 
