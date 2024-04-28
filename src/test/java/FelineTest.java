@@ -19,7 +19,8 @@ public class FelineTest {
 
     @Test
     public void getKittensTest() {
-        assertEquals(1, feline.getKittens());
+        feline.getKittens();
+        Mockito.verify(feline, Mockito.times(1)).getKittens(1);
     }
 
     @Test
